@@ -1,0 +1,76 @@
+@import-normalize;
+
+@font-face {
+  font-family: 'DMSansRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('DMSansRegular'),
+    url(./fonts/DMSans/DMSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'DMSansMedium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('DMSansMedium'),
+    url(./fonts/DMSans/DMSans-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsLight';
+  font-style: normal;
+  font-weight: 300;
+  src: local('PoppinsLight'),
+    url(./fonts/Poppins/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PoppinsRegular'),
+    url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsMedium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PoppinsMedium'),
+    url(./fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsSemibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('PoppinsSemibold'),
+    url(./fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PoppinsBold'),
+    url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+:root {
+  /* Fonts */
+  --primary-light: 'PoppinsLight', sans-serif;
+  --primary-regular: 'PoppinsRegular', sans-serif;
+  --primary-medium: 'PoppinsMedium', sans-serif;
+  --primary-semibold: 'PoppinsSemibold', sans-serif;
+  --primary-bold: 'PoppinsBold', sans-serif;
+
+  --secondary-regular: 'DMSansRegular', sans-serif;
+  --secondary-medium: 'DMSansMedium', sans-serif;
+
+  /* Colors */
+  --dark-mode-color: #191919;
+  --nav-subtitle-color: #A7A7A7;
+  --greeting-color: #D9D9D9;
+  --title-color: #CCCCCC;
+  --white-color: #FFFFFF;
+}
