@@ -73,5 +73,61 @@
   --greeting-color: #D9D9D9;
   --title-color: #CCCCCC;
   --white-color: #FFFFFF;
-  --black: #000;
+  --nav-hover-color: #FF4500;
+}
+
+body {
+  margin: 0;
+  font-family: 'PoppinsLight', 'PoppinsRegular', 'PoppinsMedium', 'PoppinsSemibold', 'PoppinsBold', 'DMSansRegular', 'DMSansMedium',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
