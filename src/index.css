@@ -84,6 +84,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
+  background-color: var(--dark-mode-color);
 }
 
 code {
@@ -95,11 +96,11 @@ html {
   box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 h1,
 h2,
