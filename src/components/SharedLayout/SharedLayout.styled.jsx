@@ -5,20 +5,18 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  padding: 0 15px;
   
   @media screen and (min-width: 480px) {
     width: 480px;
-    padding: 0 30px;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 0 100px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding: 0 195px;
   }
 `;
 
@@ -118,7 +116,16 @@ export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--footer-line-color);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 42px;
+  }
 `;
 
 export const ContactsList = styled.ul`
@@ -164,16 +171,81 @@ export const ContactsLink = styled.li`
 export const ContactsText = styled.a`
   color: var(--nav-subtitle-color);
   font-family: var(--secondary-regular);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 22px;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 18px;
     line-height: 26px;
+  }
+`;
+
+export const Copyright = styled.p`
+  font-family: var(--primary-regular);
+  font-size: 10px;
+  line-height: 26px;
+  background: linear-gradient(#13B0F5, #E70FAA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+`;
+
+export const FooterLink = styled(NavLink)`
+  padding: 8px 8px;
+  text-decoration: none;
+  color: var(--nav-subtitle-color);
+  font-family: var(--secondary-medium);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: var(--nav-hover-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 26px;
+
+    &:not(:last-child) {
+      padding-right: 52px;
+    }
+  }
+`;
+
+export const FooterNav = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 42px;
   }
 `;

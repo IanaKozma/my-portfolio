@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import logo from '../../images/code-girl.png';
 import sprite from "../../images/sprite.svg";
-import { Container, HeaderWrapper, HeaderImg, ButtonMenu, NavMenu, Link, SocialIconsList, SocialIcon, FooterWrapper, ContactsList, ContactsWrapper, ContactsIcon, ContactsLink, ContactsText } from "./SharedLayout.styled";
+import { Container, HeaderWrapper, HeaderImg, ButtonMenu, NavMenu, Link, SocialIconsList, SocialIcon, FooterWrapper, ContactsList, ContactsWrapper, ContactsIcon, ContactsLink, ContactsText, Copyright, FooterLink, FooterNav } from "./SharedLayout.styled";
 
 export const SharedLayout = () => {
   return (
@@ -96,7 +96,17 @@ export const SharedLayout = () => {
                     </li>
                   </SocialIconsList>
               </ContactsWrapper>
-            </FooterWrapper>
+          </FooterWrapper>
+          <FooterNav>
+            <nav>
+              <FooterLink to="/">Home</FooterLink>
+              <FooterLink to="/about">About</FooterLink>
+              <FooterLink to="/techStack">Tech Stack</FooterLink>
+              <FooterLink to="/projects">Projects</FooterLink>
+              <FooterLink to="/contact">Contact</FooterLink>
+            </nav>
+            <Copyright>© Portfolio 2023 by IK</Copyright>
+          </FooterNav>
         </Container>
       </footer>
     </>
