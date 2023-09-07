@@ -116,15 +116,15 @@ export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--footer-line-color);
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 42px;
+    padding-bottom: 18px;
   }
 `;
 
@@ -239,13 +239,13 @@ export const FooterNav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
+  padding: 12px 0;
 
   @media screen and (min-width: 768px) {
-    padding-top: 30px;
+    padding: 15px 0;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 42px;
+    padding: 18px 0;
   }
 `;
