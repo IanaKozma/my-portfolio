@@ -49,6 +49,12 @@ export const HeaderImg = styled.img`
 export const ButtonMenu = styled.button`
   border: none;
   background-color: var(--dark-mode-color);
+  fill: var(--white-color);
+
+  :hover,
+  :focus {
+    fill: var(--nav-hover-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;

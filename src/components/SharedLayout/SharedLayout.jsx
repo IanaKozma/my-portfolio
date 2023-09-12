@@ -1,20 +1,25 @@
 import { Outlet } from "react-router-dom";
+import { useState } from 'react';
 import logo from '../../images/code-girl.png';
 import sprite from "../../images/sprite.svg";
+import { MobileMenu } from "../Modal/Modal";
 import { Container, HeaderWrapper, HeaderImg, ButtonMenu, NavMenu, Link, SocialIconsList, SocialIcon, FooterWrapper, ContactsList, ContactsWrapper, ContactsIcon, ContactsLink, ContactsText, Copyright, FooterLink, FooterNav } from "./SharedLayout.styled";
 
 export const SharedLayout = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <header>
         <Container>
           <HeaderWrapper>
             <HeaderImg src={logo} alt="Logo" />
-            <ButtonMenu type="button">
+            <ButtonMenu type="button" onClick={() => setIsOpen(true)}>
                 <svg width="30" height="30">
                   <use href={sprite + "#icon-hamburger-menu"}></use>
                 </svg>
             </ButtonMenu>
+            {isOpen && <MobileMenu setIsOpen={setIsOpen} />}
             <NavMenu>
               <nav>
                 <Link to="/">Home</Link>
