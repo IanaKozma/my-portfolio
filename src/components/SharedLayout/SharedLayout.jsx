@@ -2,11 +2,22 @@ import { Outlet } from "react-router-dom";
 import { useState } from 'react';
 import logo from '../../images/code-girl.png';
 import sprite from "../../images/sprite.svg";
+import { navLinks } from "../NavMenu";
 import { MobileMenu } from "../Modal/Modal";
 import { Container, HeaderWrapper, HeaderImg, ButtonMenu, NavMenu, Link, SocialIconsList, SocialIcon, FooterWrapper, ContactsList, ContactsWrapper, ContactsIcon, ContactsLink, ContactsText, Copyright, FooterLink, FooterNav } from "./SharedLayout.styled";
 
 export const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const NavBar = () => {
+    return (
+      <nav>
+        {navLinks.map((link, index) => (
+        <Link key={index} to={link.to}>{link.label}</Link>
+        ))}
+      </nav>
+    );
+  };
 
   return (
     <>
@@ -21,13 +32,14 @@ export const SharedLayout = () => {
             </ButtonMenu>
             {isOpen && <MobileMenu setIsOpen={setIsOpen} />}
             <NavMenu>
-              <nav>
+              {NavBar()}
+              {/* <nav>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/techStack">Tech Stack</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
-              </nav>
+              </nav> */}
               <SocialIconsList>
                 <li>
                   <SocialIcon
@@ -103,13 +115,14 @@ export const SharedLayout = () => {
               </ContactsWrapper>
           </FooterWrapper>
           <FooterNav>
-            <nav>
+            {NavBar()}
+            {/* <nav>
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/about">About</FooterLink>
               <FooterLink to="/techStack">Tech Stack</FooterLink>
               <FooterLink to="/projects">Projects</FooterLink>
               <FooterLink to="/contact">Contact</FooterLink>
-            </nav>
+            </nav> */}
             <Copyright>© Portfolio 2023 by IK</Copyright>
           </FooterNav>
         </Container>

@@ -1,11 +1,22 @@
 import { createPortal } from 'react-dom';
 import sprite from "../../images/sprite.svg";
+import { navLinks } from "../NavMenu";
 import { Container, SocialIconsList, SocialIcon } from "../SharedLayout/SharedLayout.styled";
 import { Backdrop, Modal, Button, MobileNav, MobileLink } from "./Modal.styled";
 
 const modalRoot = document.querySelector('#modal-root');
 
 export const MobileMenu = ({ setIsOpen }) => {
+    const NavBar = () => {
+        return (
+        <MobileNav>
+            {navLinks.map((link, index) => (
+            <MobileLink key={index} to={link.to}>{link.label}</MobileLink>
+            ))}
+        </MobileNav>
+        );
+    };
+    
     return createPortal(
       <Container>
     <Backdrop onClick={() => setIsOpen(false)}>
@@ -14,14 +25,15 @@ export const MobileMenu = ({ setIsOpen }) => {
                 <svg width="20" height="20">
                     <use href={sprite + "#icon-close-menu"}></use>
                 </svg>
-            </Button>     
-                <MobileNav>
+            </Button>
+            {NavBar()}        
+                {/* <MobileNav>
                     <MobileLink to="/">Home</MobileLink>
                     <MobileLink to="/about">About</MobileLink>
                     <MobileLink to="/techStack">Tech Stack</MobileLink>
                     <MobileLink to="/projects">Projects</MobileLink>
                     <MobileLink to="/contact">Contact</MobileLink>
-                </MobileNav>
+                </MobileNav> */}
                 <SocialIconsList>
                     <li>
                         <SocialIcon
