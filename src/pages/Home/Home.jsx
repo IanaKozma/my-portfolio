@@ -1,4 +1,4 @@
-import { Container } from "../../components/SharedLayout/SharedLayout.styled";
+import { Container } from "../../components/Header/Header.styled";
 import photo349 from "../../images/photo349.jpg";
 import photo280 from "../../images/photo280.jpg";
 import photo230 from "../../images/photo230.jpg";

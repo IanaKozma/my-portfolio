@@ -71,3 +71,11 @@ export const MobileLink = styled(NavLink)`
         color: var(--nav-hover-color);
     }
 `;
+
+export const SocialIcon = styled.a`
+  fill: var(--footer-line-color);
+
+  &:hover {
+    fill: var(--nav-hover-color);
+  }
+`;

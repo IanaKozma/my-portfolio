@@ -1,8 +1,8 @@
 import { createPortal } from 'react-dom';
 import sprite from "../../images/sprite.svg";
 import { navLinks } from "../NavMenu";
-import { Container, SocialIconsList, SocialIcon } from "../SharedLayout/SharedLayout.styled";
-import { Backdrop, Modal, Button, MobileNav, MobileLink } from "./Modal.styled";
+import { Container, SocialIconsList } from "../Header/Header.styled";
+import { Backdrop, Modal, Button, MobileNav, MobileLink, SocialIcon } from "./Modal.styled";
 
 const modalRoot = document.querySelector('#modal-root');
 
@@ -26,14 +26,7 @@ export const MobileMenu = ({ setIsOpen }) => {
                     <use href={sprite + "#icon-close-menu"}></use>
                 </svg>
             </Button>
-            {NavBar()}        
-                {/* <MobileNav>
-                    <MobileLink to="/">Home</MobileLink>
-                    <MobileLink to="/about">About</MobileLink>
-                    <MobileLink to="/techStack">Tech Stack</MobileLink>
-                    <MobileLink to="/projects">Projects</MobileLink>
-                    <MobileLink to="/contact">Contact</MobileLink>
-                </MobileNav> */}
+            {NavBar()}
                 <SocialIconsList>
                     <li>
                         <SocialIcon
