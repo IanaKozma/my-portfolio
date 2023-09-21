@@ -76,6 +76,8 @@
   --nav-hover-color: #FF4500;
   --footer-line-color: #42446E;
   --backdrop-bg-color: rgba(43, 43, 43, 0.5);
+  --jobtime-bg-color: #D7FFE0;
+  --jobtime-text-color: #018C0F;
 }
 
 body {

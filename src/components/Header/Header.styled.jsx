@@ -80,7 +80,6 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   color: var(--nav-subtitle-color);
   font-family: var(--secondary-medium);
-  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
 
