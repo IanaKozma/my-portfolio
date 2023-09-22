@@ -1,6 +1,6 @@
 import { Container } from "../../components/Header/Header.styled";
 import sprite from "../../images/sprite.svg";
-import { Section, SectionTitle, Summary, WorkItem, JobDescription, JobTitle, JobTime, Icon, JobDetails, OfficeName, OfficeLocation, JobPeriod } from "./About.styled";
+import { Section, EducationSection, SectionTitle, Summary, WorkItem, JobDescription, JobTitle, JobTime, Icon, JobDetails, OfficeName, OfficeLocation, JobPeriod } from "./About.styled";
 
 export const About = () => {
   return (
@@ -147,7 +147,7 @@ export const About = () => {
             </WorkItem>
           </ul>
         </Section>
-        <Section>
+        <EducationSection>
           <SectionTitle>Education</SectionTitle>
           <ul>
             <WorkItem>
@@ -229,7 +229,7 @@ export const About = () => {
               </JobDetails>
             </WorkItem>
           </ul>
-        </Section>
+        </EducationSection>
       </Container>
     </main>
   );

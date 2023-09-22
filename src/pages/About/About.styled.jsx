@@ -8,21 +8,57 @@ export const Section = styled.section`
     }
 `;
 
+export const EducationSection = styled(Section)`
+    margin-bottom: 80px;
+`;
+
 export const SectionTitle = styled.h2`
-    padding: 38px 0;
+    padding: 18px 0;
     background: linear-gradient(315deg, #ee9617, #fe5858);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--primary-bold);
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 38px;
+
+    @media screen and (min-width: 768px) {
+        padding: 28px 0;
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 38px 0;
+        font-size: 42px;
+        line-height: 52px;
+    }
 `;
 
 export const Summary = styled.p`
-    width: 600px;
     font-family: var(--primary-regular);
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 18px;
+
+    @media screen and (min-width: 768px) {
+        width: 500px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 600px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+`;
+
+export const WorkItem = styled.li`
+    border-bottom: 2px solid var(--nav-subtitle-color);
+    padding-bottom: 24px;
+
+    &:not(:first-child) {
+        padding-top: 30px;
+    }
 `;
 
 export const JobDescription = styled.div`
@@ -35,9 +71,16 @@ export const JobDescription = styled.div`
 
 export const JobTitle = styled.h3`
     font-family: var(--primary-regular);
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: 1px;
+    width: 300px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 28px;
+        width: 600px;
+    }
 `;
 
 export const JobTime = styled.p`
@@ -61,7 +104,7 @@ export const JobDetails = styled.div`
     line-height: 28px;
     letter-spacing: 1px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
     }
@@ -72,7 +115,7 @@ export const OfficeName = styled.p`
     align-items: center;
 
     @media screen and (min-width: 1200px) {
-        width: 300px;
+        width: 320px;
     }
 `;
 
@@ -90,11 +133,3 @@ export const JobPeriod = styled.p`
     align-items: center;
 `;
 
-export const WorkItem = styled.li`
-    border-bottom: 2px solid var(--nav-subtitle-color);
-    padding-bottom: 24px;
-
-    &:not(:first-child) {
-        padding-top: 30px;
-    }
-`;
