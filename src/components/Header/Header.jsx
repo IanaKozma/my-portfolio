@@ -11,8 +11,8 @@ export const Header = () => {
     const NavBar = () => {
         return (
             <nav>
-                {navLinks.map((link, index) => (
-                    <Link key={index} to={link.to}>{link.label}</Link>
+                {navLinks.map(({to, label}) => (
+                    <Link key={to} to={to}>{label}</Link>
                 ))}
             </nav>
         );

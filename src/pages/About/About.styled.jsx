@@ -8,10 +8,6 @@ export const Section = styled.section`
     }
 `;
 
-export const EducationSection = styled(Section)`
-    margin-bottom: 80px;
-`;
-
 export const SectionTitle = styled.h2`
     padding: 18px 0;
     background: linear-gradient(315deg, #ee9617, #fe5858);
@@ -133,3 +129,36 @@ export const JobPeriod = styled.p`
     align-items: center;
 `;
 
+export const LanguagesWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+`;
+
+export const LanguagesItem = styled.li`
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+`;
+
+export const CvLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 40px auto;
+    gap: 7px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(#13B0F5, #E70FAA);
+    color: var(--black-color);
+
+    :hover,
+    :focus {
+        fill: var(--white-color);
+        stroke: var(--white-color);
+        color: var(--white-color);
+    }
+`;

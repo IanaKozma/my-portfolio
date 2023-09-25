@@ -1,6 +1,7 @@
 import { Container } from "../../components/Header/Header.styled";
 import sprite from "../../images/sprite.svg";
-import { Section, EducationSection, SectionTitle, Summary, WorkItem, JobDescription, JobTitle, JobTime, Icon, JobDetails, OfficeName, OfficeLocation, JobPeriod } from "./About.styled";
+import cv from '../../cv.pdf';
+import { Section, SectionTitle, Summary, WorkItem, JobDescription, JobTitle, JobTime, Icon, JobDetails, OfficeName, OfficeLocation, JobPeriod, LanguagesItem, LanguagesWrapper, CvLink } from "./About.styled";
 
 export const About = () => {
   return (
@@ -147,7 +148,7 @@ export const About = () => {
             </WorkItem>
           </ul>
         </Section>
-        <EducationSection>
+        <Section>
           <SectionTitle>Education</SectionTitle>
           <ul>
             <WorkItem>
@@ -229,7 +230,52 @@ export const About = () => {
               </JobDetails>
             </WorkItem>
           </ul>
-        </EducationSection>
+        </Section>
+        <Section>
+          <SectionTitle>Languages</SectionTitle>
+          <ul>
+            <LanguagesItem>
+              <LanguagesWrapper>
+                German
+                <JobTime>Fluent (C1)</JobTime>
+              </LanguagesWrapper>
+            </LanguagesItem>
+            <LanguagesItem>
+              <LanguagesWrapper>
+                English
+                <JobTime>Fluent (C1)</JobTime>
+              </LanguagesWrapper>
+            </LanguagesItem>
+            <LanguagesItem>
+              <LanguagesWrapper>
+                Spanish
+                <JobTime>Fluent (C1)</JobTime>
+              </LanguagesWrapper>
+            </LanguagesItem>
+            <LanguagesItem>
+              <LanguagesWrapper>
+                Russian
+                <JobTime>Native</JobTime>
+              </LanguagesWrapper>
+            </LanguagesItem>
+            <LanguagesItem>
+              <LanguagesWrapper>
+                Ukrainian
+                <JobTime>Native</JobTime>
+              </LanguagesWrapper>
+            </LanguagesItem>
+          </ul>
+        </Section>
+        <CvLink
+          href={cv}
+          download
+          title="download_CV"
+        >
+          <svg width="25" height="25">
+            <use href={sprite + '#icon-cv'}></use>
+          </svg>
+          Download CV
+        </CvLink>
       </Container>
     </main>
   );

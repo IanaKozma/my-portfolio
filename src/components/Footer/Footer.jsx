@@ -8,8 +8,8 @@ export const Footer = () => {
     const NavBar = () => {
         return (
             <nav>
-                {navLinks.map((link, index) => (
-                    <FooterLink key={index} to={link.to}>{link.label}</FooterLink>
+                {navLinks.map(({to, label}) => (
+                    <FooterLink key={to} to={to}>{label}</FooterLink>
                 ))}
             </nav>
         );
