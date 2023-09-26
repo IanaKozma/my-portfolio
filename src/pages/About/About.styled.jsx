@@ -155,8 +155,8 @@ export const CvLink = styled.a`
     background: linear-gradient(#13B0F5, #E70FAA);
     color: var(--black-color);
 
-    :hover,
-    :focus {
+    &:hover,
+    &:focus {
         fill: var(--white-color);
         stroke: var(--white-color);
         color: var(--white-color);

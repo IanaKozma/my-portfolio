@@ -1,7 +1,9 @@
+import { TechStack } from "../../components/TechStack/TechStack";
+
 export const Projects = () => {
   return (
     <main>
-      <h1>Tech Stack</h1>
+      <TechStack />
     </main>
   );
 };
