@@ -112,7 +112,6 @@ export const SocialIcon = styled.a`
   fill: var(--nav-subtitle-color);
 
   &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     fill: var(--white-color);
   }
 `;

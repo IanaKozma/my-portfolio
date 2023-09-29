@@ -9,27 +9,27 @@ export const TechStack = () => {
             <ProjectsPageTitle>Tech Stack</ProjectsPageTitle>
             <TechStackList>
                 <StackListItem>
-                    <StackIcon width="70" height="70">
+                    <StackIcon>
                         <use href={sprite + "#icon-html"}></use>
                     </StackIcon>
                 </StackListItem>
                 <StackListItem>
-                    <StackIcon width="70" height="70">
+                    <StackIcon>
                         <use href={sprite + "#icon-css"}></use>
                     </StackIcon>
                 </StackListItem>
                 <StackListItem>
-                    <StackIcon width="70" height="70">
+                    <StackIcon>
                         <use href={sprite + "#icon-js"}></use>
                     </StackIcon>
                 </StackListItem>
                 <StackListItem>
-                    <StackIcon width="70" height="70">
+                    <StackIcon>
                         <use href={sprite + "#icon-react"}></use>
                     </StackIcon>
                 </StackListItem>
                 <StackListItem>
-                    <StackIcon width="70" height="70">
+                    <StackIcon>
                         <use href={sprite + "#icon-node"}></use>
                     </StackIcon>
                 </StackListItem>

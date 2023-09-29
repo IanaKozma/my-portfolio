@@ -1,5 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from 'styled-components';
+import { bounceIn } from 'react-animations';
 import { SectionTitle } from "../../pages/About/About.styled";
+
+const bounceAnimation = keyframes`${bounceIn}`;
 
 export const Section = styled.section`
     padding-bottom: 30px;
@@ -30,6 +33,7 @@ export const StackListItem = styled.li`
     align-items: center;
     width: calc((100% - 30px) / 2);
     padding-bottom: 5px;
+    animation: 2s ${bounceAnimation};
 
     @media screen and (min-width: 480px) {
         width: 225px;
@@ -43,10 +47,10 @@ export const StackListItem = styled.li`
 export const StackIcon = styled.svg`
     width: 100px;
     height: 100px;
+    transition: transform 0.25s;
 
     &:hover {
         cursor: pointer;
-        width: 120px;
-        height: 120px;
+        transform: scale(1.1)
     }
 `;
