@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.4bbf1954.css",
-    "main.js": "/my-portfolio/static/js/main.8d0f495d.js",
+    "main.css": "/my-portfolio/static/css/main.ff64d15c.css",
+    "main.js": "/my-portfolio/static/js/main.aafe0967.js",
     "static/media/cv.pdf": "/my-portfolio/static/media/cv.885e1d838f0388a3fa8c.pdf",
     "static/media/Poppins-Light.ttf": "/my-portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
     "static/media/Poppins-Regular.ttf": "/my-portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -11,15 +11,15 @@
     "static/media/code-girl.png": "/my-portfolio/static/media/code-girl.c3e600eeeaba86d05b98.png",
     "static/media/DMSans-Medium.ttf": "/my-portfolio/static/media/DMSans-Medium.64a5ff1b212ef8a741e5.ttf",
     "static/media/DMSans-Regular.ttf": "/my-portfolio/static/media/DMSans-Regular.5796ba67a2ae308b784c.ttf",
-    "static/media/sprite.svg": "/my-portfolio/static/media/sprite.c1a5fb30061ec0c4bc2619e924a30c16.svg",
+    "static/media/sprite.svg": "/my-portfolio/static/media/sprite.e7361d676237b1298035180c4d65c95a.svg",
     "static/media/photo349.jpg": "/my-portfolio/static/media/photo349.c1f10784f964fa9054ff.jpg",
     "static/media/photo280.jpg": "/my-portfolio/static/media/photo280.854338b6f82fe275ce60.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.4bbf1954.css.map": "/my-portfolio/static/css/main.4bbf1954.css.map",
-    "main.8d0f495d.js.map": "/my-portfolio/static/js/main.8d0f495d.js.map"
+    "main.ff64d15c.css.map": "/my-portfolio/static/css/main.ff64d15c.css.map",
+    "main.aafe0967.js.map": "/my-portfolio/static/js/main.aafe0967.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bbf1954.css",
-    "static/js/main.8d0f495d.js"
+    "static/css/main.ff64d15c.css",
+    "static/js/main.aafe0967.js"
   ]
 }
