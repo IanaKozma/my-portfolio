@@ -1,4 +1,7 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeIn } from 'react-animations';
+
+const fadeAnimation = keyframes`${fadeIn}`;
 
 export const Section = styled.section`
     padding-bottom: 60px;
@@ -15,6 +18,7 @@ export const ProjectsList = styled.ul`
 export const ProjectItem = styled.li`
     width: 100%;
     transition: transform 0.25s;
+    animation: 2s ${fadeAnimation};
 
     &:hover {
         cursor: pointer;
