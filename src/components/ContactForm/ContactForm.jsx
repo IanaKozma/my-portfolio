@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Container } from "../Header/Header.styled";
+import { Form, FormInput, Textarea, SubmitButton } from "./ContactForm.styled";
 
 export const ContactForm = () => {
     const [status, setStatus] = useState("Submit");
@@ -37,20 +39,19 @@ export const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" required />
-            </div>
-            <div>
-                <label htmlFor="email">E-mail:</label>
-                <input type="email" id="email" required />
-            </div>
-            <div>
-                <label htmlFor="message">Message:</label>
-                <textarea id="message" required />
-            </div>
-            <button type="submit">{status}</button>
-        </form>
+        <Container>
+            <Form onSubmit={handleSubmit}>
+                <div>
+                    <FormInput type="text" id="name" placeholder="Name" required />
+                </div>
+                <div>
+                    <FormInput type="email" id="email" placeholder="E-mail" required />
+                </div>
+                <div>
+                    <Textarea id="message" placeholder="Comment" required />
+                </div>
+                <SubmitButton type="submit">{status}</SubmitButton>
+            </Form>
+        </Container>
     );
 };
