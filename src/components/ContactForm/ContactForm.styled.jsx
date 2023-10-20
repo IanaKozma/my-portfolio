@@ -7,13 +7,12 @@ export const Form = styled.form`
 
 export const FormInput = styled.input`
     color: var(--white-color);
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-family: var(--primary-medium);
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border: 2px solid #CC6666;
+    border: 2px solid var(--form-border-color);
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -22,7 +21,7 @@ export const FormInput = styled.input`
     outline: 0;
 
     &:focus { 
-        border: 2px solid #CC4949; 
+        border: 2px solid var(--form-accent-color); 
     }
 `;
 
@@ -30,14 +29,12 @@ export const Textarea = styled.textarea`
     height: 150px;
     line-height: 150%;
     resize: vertical;
-
     color: var(--white-color);
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-family: var(--primary-medium);
     font-size: 18px;
     border-radius: 5px;
     background-color: transparent;
-    border: 2px solid #CC6666;
+    border: 2px solid var(--form-border-color);
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -46,14 +43,18 @@ export const Textarea = styled.textarea`
     outline: 0;
 
     &:focus { 
-        border: 2px solid #CC4949; 
+        border: 2px solid var(--form-accent-color); 
     }
 `;
 
 export const SubmitButton = styled.button`
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    width: 100%;
-    background:#CC6666;
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-bold);
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--form-border-color);
     border-radius: 5px;
     border: 0;
     color: var(--white-color);
@@ -62,10 +63,9 @@ export const SubmitButton = styled.button`
     padding-bottom: 10px;
     transition: all 0.3s;
     margin-top: -4px;
-    font-weight: 700;
 
     &:hover,
     &:focus {
-        background:#CC4949 
-    };
+        background:var(--form-accent-color);
+    }
 `;

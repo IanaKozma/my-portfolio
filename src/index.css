@@ -81,6 +81,8 @@
   --black-color: #000;
   --project-bg-color: #363636;
   --project-link-color: #46e055;
+  --form-border-color: #CC6666;
+  --form-accent-color: #CC4949;
 }
 
 body {
