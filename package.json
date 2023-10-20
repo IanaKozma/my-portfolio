@@ -21,13 +21,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "prestart:backend": "npm install",
+    "start:backend": "node src/server.js",
     "build": "react-scripts build",
     "lint:js": "eslint src/**/*.{js,jsx}",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start:backend": "node src/server.js",
-    "preinstall": "echo 'RUNNING NPM INSTALL!'"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
