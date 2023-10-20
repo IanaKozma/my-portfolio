@@ -1,14 +1,20 @@
 require('dotenv').config();
 
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 const cors = require('cors');
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors());
 app.use(bodyParser.json());
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
