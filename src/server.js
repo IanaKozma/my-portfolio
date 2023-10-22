@@ -8,13 +8,9 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 app.use(bodyParser.json());
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -34,6 +30,10 @@ app.post('/my-portfolio/contact', (req, res) => {
         .send(content)
         .then(() => res.status(200).json({ status: 'Message sent successfully' }))
         .catch((error) => res.status(400).json({ status: error.message }));
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3001;
