@@ -9,7 +9,7 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, '..', 'build')));
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -39,5 +39,5 @@ app.listen(PORT, '0.0.0.0', () => {
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build', 'index.html'));
+    res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
