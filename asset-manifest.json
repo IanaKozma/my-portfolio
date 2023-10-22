@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.80a8a637.css",
-    "main.js": "/my-portfolio/static/js/main.90e3c87f.js",
-    "static/media/cv.pdf": "/my-portfolio/static/media/cv.885e1d838f0388a3fa8c.pdf",
-    "static/media/Poppins-Light.ttf": "/my-portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
-    "static/media/Poppins-Regular.ttf": "/my-portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/Poppins-Medium.ttf": "/my-portfolio/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
-    "static/media/Poppins-SemiBold.ttf": "/my-portfolio/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
-    "static/media/Poppins-Bold.ttf": "/my-portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
-    "static/media/code-girl.png": "/my-portfolio/static/media/code-girl.c3e600eeeaba86d05b98.png",
-    "static/media/DMSans-Medium.ttf": "/my-portfolio/static/media/DMSans-Medium.64a5ff1b212ef8a741e5.ttf",
-    "static/media/DMSans-Regular.ttf": "/my-portfolio/static/media/DMSans-Regular.5796ba67a2ae308b784c.ttf",
-    "static/media/phonebook.jpg": "/my-portfolio/static/media/phonebook.ae5e32dbabe8ba515bf6.jpg",
-    "static/media/news.jpg": "/my-portfolio/static/media/news.6c85ac4ed38868a3bce8.jpg",
-    "static/media/mimino.jpg": "/my-portfolio/static/media/mimino.b056ffd9713f46ae1c74.jpg",
-    "static/media/sprite.svg": "/my-portfolio/static/media/sprite.e7361d676237b1298035180c4d65c95a.svg",
-    "static/media/photo349.jpg": "/my-portfolio/static/media/photo349.c1f10784f964fa9054ff.jpg",
-    "static/media/photo280.jpg": "/my-portfolio/static/media/photo280.854338b6f82fe275ce60.jpg",
-    "index.html": "/my-portfolio/index.html",
-    "main.80a8a637.css.map": "/my-portfolio/static/css/main.80a8a637.css.map",
-    "main.90e3c87f.js.map": "/my-portfolio/static/js/main.90e3c87f.js.map"
+    "main.css": "/static/css/main.af6d4c34.css",
+    "main.js": "/static/js/main.e3e2b362.js",
+    "static/media/cv.pdf": "/static/media/cv.885e1d838f0388a3fa8c.pdf",
+    "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/code-girl.png": "/static/media/code-girl.c3e600eeeaba86d05b98.png",
+    "static/media/DMSans-Medium.ttf": "/static/media/DMSans-Medium.64a5ff1b212ef8a741e5.ttf",
+    "static/media/DMSans-Regular.ttf": "/static/media/DMSans-Regular.5796ba67a2ae308b784c.ttf",
+    "static/media/phonebook.jpg": "/static/media/phonebook.ae5e32dbabe8ba515bf6.jpg",
+    "static/media/news.jpg": "/static/media/news.6c85ac4ed38868a3bce8.jpg",
+    "static/media/mimino.jpg": "/static/media/mimino.b056ffd9713f46ae1c74.jpg",
+    "static/media/sprite.svg": "/static/media/sprite.e7361d676237b1298035180c4d65c95a.svg",
+    "static/media/photo349.jpg": "/static/media/photo349.c1f10784f964fa9054ff.jpg",
+    "static/media/photo280.jpg": "/static/media/photo280.854338b6f82fe275ce60.jpg",
+    "index.html": "/index.html",
+    "main.af6d4c34.css.map": "/static/css/main.af6d4c34.css.map",
+    "main.e3e2b362.js.map": "/static/js/main.e3e2b362.js.map"
   },
   "entrypoints": [
-    "static/css/main.80a8a637.css",
-    "static/js/main.90e3c87f.js"
+    "static/css/main.af6d4c34.css",
+    "static/js/main.e3e2b362.js"
   ]
 }
