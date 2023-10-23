@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Container } from "../Header/Header.styled";
 import { Form, FormInput, Textarea, SubmitButton } from "./ContactForm.styled";
 
@@ -28,11 +30,11 @@ export const ContactForm = () => {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
             let result = await response.json();
-            alert(result.status);
+            toast.success(result.status);
             
         } catch (error) {
             console.error("Error occurred:", error);
-            setStatus("Error sending message");
+            toast.error("Error sending message");
         }
         e.target.reset();
         setStatus("Submit");
@@ -40,6 +42,7 @@ export const ContactForm = () => {
 
     return (
         <Container>
+            <ToastContainer />
             <Form onSubmit={handleSubmit}>
                 <div>
                     <FormInput type="text" id="name" placeholder="Name" required />
