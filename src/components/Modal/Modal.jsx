@@ -11,19 +11,19 @@ export const MobileMenu = ({ setIsOpen }) => {
         return (
             <MobileNav>
                 {navLinks.map(({ to, label }) => (
-                    <MobileLink key={to} to={to}>{label}</MobileLink>
+                    <MobileLink key={to} to={to} onClick={closeModal}>{label}</MobileLink>
                 ))}
             </MobileNav>
         );
     };
 
-    const handleClick = () => { setIsOpen(false) };
+    const closeModal = () => { setIsOpen(false) };
     
     return createPortal(
         <Container>
-            <Backdrop onClick={() => handleClick()}>
+            <Backdrop onClick={() => closeModal()}>
                 <Modal onClick={e => e.stopPropagation()}>
-                    <Button type="button" onClick={() => handleClick()}>
+                    <Button type="button" onClick={() => closeModal()}>
                         <svg width="20" height="20">
                             <use href={sprite + "#icon-close-menu"}></use>
                         </svg>
