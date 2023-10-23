@@ -17,7 +17,7 @@ export const ContactForm = () => {
         };
 
         try {
-            let response = await fetch("http://localhost:3001/my-portfolio/contact", {
+            let response = await fetch("/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json;charset=utf-8",

@@ -1,4 +1,4 @@
-console.log("__dirname value:", __dirname);
+/* console.log("__dirname value:", __dirname); */
 require('dotenv').config();
 
 const express = require('express');
@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-app.post('/my-portfolio/contact', (req, res) => {
-    console.log("Received request at /my-portfolio/contact");
+app.post('/contact', (req, res) => {
+    /* console.log("Received request at /contact"); */
     const { email, name, message } = req.body;
 
     const content = {
