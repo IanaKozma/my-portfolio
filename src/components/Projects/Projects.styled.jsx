@@ -8,15 +8,24 @@ export const Section = styled.section`
 `;
 
 export const ProjectsList = styled.ul`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+        padding: 0;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         gap: 30px;
     }
 `;
 
 export const ProjectItem = styled.li`
-    width: 100%;
+    /* width: 100%; */
     transition: transform 0.25s;
     animation: 2s ${fadeAnimation};
 
@@ -90,6 +99,7 @@ export const StackTitle = styled.span`
 export const ProjectLinksList = styled.ul`
     display: flex;
     align-items: center;
+    padding: 0;
     gap: 48px;
 `;
 

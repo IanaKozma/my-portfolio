@@ -22,6 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "react-scripts start",
     "prestart:backend": "npm install",
     "start:backend": "node src/server.js",
     "build": "react-scripts build",

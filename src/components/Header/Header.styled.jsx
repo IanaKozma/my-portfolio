@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   margin: 0 auto;
   padding: 0 15px;
   
-  @media screen and (min-width: 480px) {
+  /* @media screen and (min-width: 480px) {
     width: 480px;
-  }
+  } */
 
   @media screen and (min-width: 768px) {
     width: 768px;

@@ -35,10 +35,6 @@ export const StackListItem = styled.li`
     padding-bottom: 5px;
     animation: 2s ${bounceAnimation};
 
-    @media screen and (min-width: 480px) {
-        width: 225px;
-    }
-
     @media screen and (min-width: 768px) {
         width: 210px;
     }

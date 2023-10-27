@@ -23,7 +23,7 @@ export const Modal = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
+    width: 400px;
     height: auto;
     padding: 15px 0 25px 25px;
     background-color: var(--white-color);
