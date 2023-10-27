@@ -48,6 +48,10 @@ export const Summary = styled.p`
     }
 `;
 
+export const AboutList = styled.ul`
+    padding: 0;
+`;
+
 export const WorkItem = styled.li`
     border-bottom: 2px solid var(--nav-subtitle-color);
     padding-bottom: 24px;

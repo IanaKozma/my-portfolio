@@ -17,6 +17,7 @@ export const TechStackList = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  padding: 0;
 
     @media screen and (min-width: 768px) {
         gap: 15px;

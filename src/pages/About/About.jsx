@@ -1,7 +1,7 @@
 import { Container } from "../../components/Header/Header.styled";
 import sprite from "../../images/sprite.svg";
 import cv from '../../cv.pdf';
-import { Section, SectionTitle, Summary, WorkItem, JobDescription, JobTitle, JobTime, Icon, JobDetails, OfficeName, OfficeLocation, JobPeriod, LanguagesItem, LanguagesWrapper, CvLink } from "./About.styled";
+import { Section, SectionTitle, Summary, AboutList, WorkItem, JobDescription, JobTitle, JobTime, Icon, JobDetails, OfficeName, OfficeLocation, JobPeriod, LanguagesItem, LanguagesWrapper, CvLink } from "./About.styled";
 
 export const About = () => {
   return (
@@ -15,7 +15,7 @@ export const About = () => {
         </Section>
         <Section>
           <SectionTitle>Work Experience</SectionTitle>
-          <ul>
+          <AboutList>
             <WorkItem>
               <JobDescription>
                 <JobTitle>Sales Area Manager</JobTitle>
@@ -146,11 +146,11 @@ export const About = () => {
                 </JobPeriod>
               </JobDetails>
             </WorkItem>
-          </ul>
+          </AboutList>
         </Section>
         <Section>
           <SectionTitle>Education</SectionTitle>
-          <ul>
+          <AboutList>
             <WorkItem>
               <JobDescription>
                 <JobTitle>Fullstack Developer</JobTitle>
@@ -229,11 +229,11 @@ export const About = () => {
                 </JobPeriod>
               </JobDetails>
             </WorkItem>
-          </ul>
+          </AboutList>
         </Section>
         <Section>
           <SectionTitle>Languages</SectionTitle>
-          <ul>
+          <AboutList>
             <LanguagesItem>
               <LanguagesWrapper>
                 German
@@ -264,7 +264,7 @@ export const About = () => {
                 <JobTime>Native</JobTime>
               </LanguagesWrapper>
             </LanguagesItem>
-          </ul>
+          </AboutList>
         </Section>
         <CvLink
           href={cv}
