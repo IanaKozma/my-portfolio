@@ -11,10 +11,7 @@ export const ProjectsList = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media screen and (max-width: 480px) {
-        padding: 0;
-    }
+    padding: 0;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -25,12 +22,10 @@ export const ProjectsList = styled.ul`
 `;
 
 export const ProjectItem = styled.li`
-    /* width: 100%; */
     transition: transform 0.25s;
     animation: 2s ${fadeAnimation};
 
     &:hover {
-        cursor: pointer;
         transform: scale(1.05)
     }
 
